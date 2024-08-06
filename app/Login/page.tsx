@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import LoginImage from '../../public/Mask group (1).png';
 import Link from 'next/link';
 import twitterLogo from '../../public/twitter.png';
@@ -11,7 +11,7 @@ import googleLogo from '../../public/Google.png';
 
 interface Logo {
     id: number;
-    logoName: string;
+    logoName: StaticImageData;
 }
 
 const logos: Logo[] = [
