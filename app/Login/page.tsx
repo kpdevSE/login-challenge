@@ -40,7 +40,7 @@ const Login: React.FC = () => {
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
-        // for the connecting apis
+        // Handle form submission
         console.log({ email, password, keepLoggedIn });
     };
 
@@ -60,14 +60,14 @@ const Login: React.FC = () => {
                         value={email}
                         onChange={handleEmailChange}
                         className="pl-3 border border-1-[#333678] w-full h-[70px] rounded-xl"
-                        placeholder='info@gmail.com'
+                        placeholder="info@gmail.com"
                     />
                     <input
                         type="password"
                         value={password}
                         onChange={handlePasswordChange}
                         className="pl-3 flex-col border border-1-[#333678] w-full h-[70px] rounded-xl"
-                        placeholder='Password'
+                        placeholder="Password"
                     />
                     <div className="flex items-start justify-between w-full">
                         <div className="flex items-start justify-start gap-4">
@@ -92,7 +92,7 @@ const Login: React.FC = () => {
                     </button>
                     <div className="flex items-start justify-start text-lg w-full gap-2">
                         <p>Don't have an Account?</p>
-                        <Link href={'/Register'} className="text-[#3C1AB9] font-bold">
+                        <Link href="/Register" className="text-[#3C1AB9] font-bold">
                             Sign Up
                         </Link>
                     </div>
@@ -106,7 +106,7 @@ const Login: React.FC = () => {
                     <div className='grid grid-cols-4 w-full gap-2 place-items-center'>
                         {logos.map((e) => (
                             <div className='w-[60%] h-[60px] flex items-center justify-center bg-[#3C1AB9] rounded-xl' key={e.id}>
-                                <Image src={e.logoName} alt='logo name' width={30} height={30} />
+                                <Image src={e.logoName} alt="logo name" width={30} height={30} />
                             </div>
                         ))}
                     </div>
