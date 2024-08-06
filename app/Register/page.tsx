@@ -11,14 +11,14 @@ import googleLogo from '../../public/Google.png';
 
 interface Logo {
     id: number;
-    logoName: string;
+    logoName: String;
 }
 
 const logos: Logo[] = [
-    { id: 1, logoName: twitterLogo },
-    { id: 2, logoName: appleLogo },
-    { id: 3, logoName: faceBookLogo },
-    { id: 4, logoName: googleLogo },
+    { id: 1, logoName: '/twitter.png' },
+    { id: 2, logoName: '/Apple.png' },
+    { id: 3, logoName: '/facebook.png' },
+    { id: 4, logoName: '/Google.png' },
 ];
 
 const Login: React.FC = () => {
