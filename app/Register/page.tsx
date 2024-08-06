@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import LoginImage from '../../public/Mask group.png';
 import Link from 'next/link';
 import twitterLogo from '../../public/twitter.png';
@@ -11,14 +11,14 @@ import googleLogo from '../../public/Google.png';
 
 interface Logo {
     id: number;
-    logoName: String;
+    logoName: StaticImageData;
 }
 
 const logos: Logo[] = [
-    { id: 1, logoName: '/twitter.png' },
-    { id: 2, logoName: '/Apple.png' },
-    { id: 3, logoName: '/facebook.png' },
-    { id: 4, logoName: '/Google.png' },
+    { id: 1, logoName: twitterLogo },
+    { id: 2, logoName: appleLogo },
+    { id: 3, logoName: faceBookLogo },
+    { id: 4, logoName: googleLogo },
 ];
 
 const Login: React.FC = () => {
